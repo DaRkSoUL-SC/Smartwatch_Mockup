@@ -186,6 +186,9 @@ a{
     transition: all .2s ease-in-out;
   }
 
+  .mid-card{
+    font-size: 18px;
+  }
   
   @media only screen and (max-width: 600px) {
     .columns {
@@ -243,6 +246,11 @@ a{
     }
 }
 
+/* About us */
+.about-text{
+    font-size:15px;
+}
+
 /* For Smaller Devices */
 @media  screen and (min-width:320px) and (max-width:480px) {
 
@@ -253,7 +261,7 @@ a{
 .headline{
     margin-left: 15px;
     width: 200px;
-    font-size:12px;
+    font-size:14px;
     overflow: hidden;
 }
 .buy-btn{
@@ -272,12 +280,18 @@ a{
 .card-body{
     font-size: 14px;
 }
+.mid-card{
+    font-size: 16px;
+}
 .specs{
     margin-top: -50px;
     margin-left: 140px;
     font-size: 12px;
     width: 200px;
     float: none;
+}
+.about-text{
+    font-size:14px
 }
 
 }
