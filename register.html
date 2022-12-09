@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .register{
+            background-image: url(./images/Smartwatch.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+
+        .form{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 50px;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            margin: -50px 0 0 -50px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+
+        .btn{
+            font-size: 14px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+        }
+        
+        .btn:hover{
+            font-size: 16px;
+        }
+
+        input{
+            text-align: center;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        @media screen and (min-width:320px) and (max-width:480px) {
+            .form{
+                font-size: 15px;
+                padding: 12px;
+                left: 25%;
+            }
+            .btn{
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .input{
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <div class="form">
+        <form action="">
+            <h1 style="border-bottom: 1px solid black;">REGISTER</h1> <br><br>
+            <label>Enter Email : </label> <br>
+            <input type="text" placeholder="Enter email" required> <br><br>
+            <label>Enter Username : </label> <br>
+            <input type="text" placeholder="Enter username" required> <br><br>
+            <label>Password : </label> <br>
+            <input type="text" placeholder="Enter Password" required> <br><br>
+            <label>Confirm Password : </label> <br>
+            <input type="text" placeholder="Enter Password" required> <br>
+            <input class="btn" type="submit">
+        </form>
+       <a href="./login.html"><p style="font-size: 16px; margin-top:10px; cursor: pointer;">Already Registered? Login</p></a> 
+    </div>
+    </div>
+</body>
+</html>

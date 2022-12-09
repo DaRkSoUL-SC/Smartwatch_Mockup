@@ -1,0 +1,289 @@
+/* All */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden ;
+}
+
+/* Navbar */
+header{
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbars{
+    position: fixed;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    width: 100%;
+    background-color: #F9F9F9;
+}
+.navbars-brand{
+    color: #0000FF; 
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 0px;
+}
+
+.nav-links{
+    text-decoration: none;
+    transition: 0.7s ease;
+    color: black;
+}
+.nav-links:hover{
+    border-bottom: 1px solid #0000FF;
+}
+
+.nav-links.bar{
+    color: #0000FF;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* Body */
+.mockup-image{
+    display: inline-block;
+}
+
+.hero{
+    background-image: url('./images/Smartwatch.jpg');
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.headline{
+    display: inline-block;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 150px;
+    animation-name: moveInleft;
+    animation-duration: 3s;
+    height: 300px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.buy-btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0000FF;
+    color: white;
+    transition: all .2s ease-in-out;
+    border: none;
+}
+.buy-btn:hover{
+    transform: scale(1.1);
+}
+
+/* Features */
+
+.card {
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px;
+}
+
+.specs{
+    margin-top: 70px;
+    margin-left: 10px;
+    float: right;
+    width: 300px;
+}
+
+/* Pricing */
+.columns{
+    float: left;
+    width: 33.3%;
+    padding: 60px;
+
+}
+
+.price{
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .price-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+
+/* Testimonials */
+#testimonials{
+    font-size: 16px;
+}
+
+
+/* Media Queries */
+
+/* Navbar */
+@media(max-width:768px) {
+    .navbars{
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+/* For Smaller Devices */
+@media  screen and (min-width:320px) and (max-width:480px) {
+
+.hero{
+    height: 100%;
+    margin-top: 60px;
+}
+.headline{
+    margin-left: 15px;
+    width: 200px;
+    font-size:12px;
+    overflow: hidden;
+}
+.buy-btn{
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.hidden_img{
+    display: none;
+}
+.features-img{
+    align-items: center;
+    text-align: center;
+    margin-left: -80px;
+}
+.card-body{
+    font-size: 14px;
+}
+.specs{
+    margin-top: -50px;
+    margin-left: 140px;
+    font-size: 12px;
+    width: 200px;
+    float: none;
+}
+
+}
+
+@media  screen and (max-width:768px){
+    .columns{
+        padding: 40px;
+    }
+}
